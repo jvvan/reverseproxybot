@@ -1,0 +1,21 @@
+{
+  "name": "reverseproxybot",
+  "version": "1.0.0",
+  "description": "Discord Bot made for interacting with Reverse Proxy API",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "j122j",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.11.0",
+    "axios": "^0.25.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
