@@ -40,4 +40,35 @@ export const commands = [
   new SlashCommandBuilder()
     .setName("proxylist")
     .setDescription("List all reverse proxies"),
+
+  new SlashCommandBuilder()
+    .setName("stream")
+    .setDescription("Make a stream")
+    .addStringOption((option) =>
+      option.setName("name").setDescription("Name").setRequired(true)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("listen")
+        .setDescription("Listen (Example: 0.0.0.0:8080)")
+        .setRequired(true)
+    )
+    .addStringOption((option) =>
+      option
+        .setName("target")
+        .setDescription("Target (Example: 127.0.0.1:8181)")
+        .setRequired(true)
+    ),
+  new SlashCommandBuilder()
+    .setName("streamdelete")
+    .setDescription("Delete a stream")
+    .addStringOption((option) =>
+      option
+        .setName("name")
+        .setDescription("Name of the stream to delete")
+        .setRequired(true)
+    ),
+  new SlashCommandBuilder()
+    .setName("streamlist")
+    .setDescription("List all streams"),
 ];
