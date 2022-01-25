@@ -1,6 +1,6 @@
 {
   "name": "reverseproxybot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Discord Bot made for interacting with Reverse Proxy API",
   "main": "dist/index.js",
   "scripts": {
